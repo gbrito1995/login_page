@@ -1,5 +1,16 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div(class="container")
+    section 
+    section
+      div(class="loginDiv")
+        div(class="avatar")
+          i(class="fa fa-avatar")
+        div(class="inputFields")
+          input(type="text")
+          input(type="password")
+        div(class="btnHolder")
+          button login
+          button sign up
+    section
