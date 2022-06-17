@@ -1,8 +1,8 @@
 const userLogin = require('./database.js');
 
-module.exports = fnSignUp = (userName, password) => {
+module.exports = fnLogin = (userName, password) => {
 
   userLogin.push({ userName: userName, password: password });
-  console.log(userLogin)
+  console.table(userLogin)
 
 };
