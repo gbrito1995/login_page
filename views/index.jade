@@ -4,13 +4,13 @@ block content
   div(class="container")
     section 
     section
-      div(class="loginDiv")
+      form(class="loginDiv" action="/home", method="POST")
         div(class="avatar")
           i(class="fa fa-user")
         div(class="inputFields")
-          input(type="text")
-          input(type="password")
+          input(type="text", id='loginInput' name="login")
+          input(type="password", id='passwordInput' name="password")
         div(class="btnHolder")
-          button login
-          button sign up
-    section
+          button(id='loginBtn' type='submit') login
+          //button(id='signUpBtn' type="button" name="signUpButton") sign up
+    section  
