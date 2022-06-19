@@ -1,17 +1,22 @@
-const userLogin = require('./database.js');
+const data = require('./database.js');
 
-let fnValidateLogin = (login, password) => {
+let fnValidateLogin = (pLogin, pPassword) => {
 
-  if (userLogin.login == login && userLogin.password == password) 
-    return true;
-
-  return false;
-
+  const user = data.users.find( (user) => {
+    return (user.login === pLogin) && (user.password === pPassword);
+  } )
+  
+  return user;
+  
 }
 
 module.exports = fnLogin = (login, password) => {
 
-  if (fnValidateLogin(login, password))
-    userLogin.push({ login: login, password: password });
+  const user = fnValidateLogin(login, password);
+  
+  if (user)
+    ata.userLogin.push({ id: user.id, date: new Date().getTime() });
+
+  console.table(data.userLogin);
   
 };
