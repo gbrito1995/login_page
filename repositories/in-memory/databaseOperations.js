@@ -1,8 +1,17 @@
 const userLogin = require('./database.js');
 
-module.exports = fnLogin = (userName, password) => {
+let fnValidateLogin = (login, password) => {
 
-  userLogin.push({ userName: userName, password: password });
-  console.table(userLogin)
+  if (userLogin.login == login && userLogin.password == password) 
+    return true;
 
+  return false;
+
+}
+
+module.exports = fnLogin = (login, password) => {
+
+  if (fnValidateLogin(login, password))
+    userLogin.push({ login: login, password: password });
+  
 };

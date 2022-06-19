@@ -28,7 +28,7 @@
 }
 
 .container> :nth-child(2) {
-  flex: 4;
+  flex: 8;
 }
 
 .loginDiv {
@@ -46,7 +46,7 @@
 }
 
 .avatar {
-  flex: 3;
+  flex: 2;
 }
 
 .inputFields {
@@ -72,7 +72,7 @@
 
 .btnHolder button {
   width: 40%;
-  height: 20%;
+  height: 30px;
   background-color: var(--firstColor);
   border: none;
   color: white;
