@@ -2,7 +2,9 @@ extends layout
 
 block content
   div(class="container")
-    section 
+    section       
+      if error
+        div(class="error")
     section
       form(class="loginDiv" action="/home", method="POST")
         div(class="avatar")

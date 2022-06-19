@@ -14,6 +14,8 @@ router.post('/home', function (req, res, next) {
 
   if (fnLogin(login, hashPassword)) {
     res.render('home', { login: login });
+  } else {
+    res.render('index', {error: "incorrect login or password!"});
   }
   
 });
