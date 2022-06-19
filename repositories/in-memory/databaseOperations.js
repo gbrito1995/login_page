@@ -15,7 +15,7 @@ module.exports = fnLogin = (login, password) => {
   const user = fnValidateLogin(login, password);
   
   if (user)
-    ata.userLogin.push({ id: user.id, date: new Date().getTime() });
+    data.userLogin.push({ id: user.id, date: new Date().getTime() });
 
   console.table(data.userLogin);
   
