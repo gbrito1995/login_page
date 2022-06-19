@@ -17,6 +17,6 @@ module.exports = fnLogin = (login, password) => {
   if (user)
     data.userLogin.push({ id: user.id, date: new Date().getTime() });
 
-  console.table(data.userLogin);
+  return user;
   
 };

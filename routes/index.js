@@ -12,9 +12,10 @@ router.post('/home', function (req, res, next) {
   const { login, password } = req.body;
   const hashPassword = md5(password);
 
-  fnLogin(login, hashPassword);
-
-  res.render('home', { login: login });
+  if (fnLogin(login, hashPassword)) {
+    res.render('home', { login: login });
+  }
+  
 });
 
 module.exports = router;
