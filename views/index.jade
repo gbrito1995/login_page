@@ -4,7 +4,8 @@ block content
   div(class="container")
     section       
       if error
-        div(class="error")
+        div(id="error")= error
+          i(class="fa fa-close")
     section
       form(class="loginDiv" action="/home", method="POST")
         div(class="avatar")

@@ -1,6 +1,7 @@
 let loginBtn = document.getElementById('loginBtn');
 let loginInput = document.getElementById('loginInput');
 let passwordInput = document.getElementById('passwordInput');
+let errorDiv = document.getElementById('error');
 
 let fnInputValidation = () => {
   if (!loginInput.value || !passwordInput.value) {
@@ -25,4 +26,8 @@ let fnBtnValidationLogin = () => {
 
 document.addEventListener('keyup', () => {
   fnBtnValidationLogin();
+})
+
+document.addEventListener('load', () => {
+  errorDiv.style.top = '1em';
 })
