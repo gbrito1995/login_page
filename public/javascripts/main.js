@@ -40,20 +40,25 @@ let errorAnimation = () => {
 
   if (verifyError()) {
     errorDiv.style.marginTop = '2em';
-    errorDiv.style.transition = 'margin-top 3s';
+    errorDiv.style.transition = 'margin-top 2s';
 
     setTimeout(() => {
       errorDiv.style.marginTop = '-10em';
       errorDiv.style.trasition = '2s';
     }, 4000)
-
-    errorBtn.addEventListener('click', () => {
-      errorDiv.style.marginTop = '-10em';
-      errorDiv.style.trasition = '2s';
-    })
+    /*
+        errorBtn.addEventListener('click', () => {
+          errorDiv.style.marginTop = '-10em';
+          errorDiv.style.trasition = '2s';
+        })*/
   }
 
 }
+
+errorBtn.addEventListener('click', () => {
+  errorDiv.style.marginTop = '-10em';
+  errorDiv.style.trasition = '2s';
+})
 
 errorAnimation();
 
