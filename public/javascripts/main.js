@@ -40,7 +40,7 @@ let errorAnimation = () => {
 
   if (verifyError()) {
     errorDiv.style.marginTop = '2em';
-    errorDiv.style.transition = 'margin-top 2s';
+    errorDiv.style.transition = 'margin-top 3s';
 
     setTimeout(() => {
       errorDiv.style.marginTop = '-10em';
@@ -56,4 +56,6 @@ let errorAnimation = () => {
 }
 
 errorAnimation();
+
+
 

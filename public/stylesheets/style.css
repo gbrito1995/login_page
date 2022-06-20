@@ -67,6 +67,7 @@
   width: 60%;
   border-radius: 4px;
   margin-top: 5px;
+  border-radius: 10px;
 }
 
 .btnHolder {
@@ -75,7 +76,7 @@
   justify-content: center;
 }
 
-.btnHolder button {
+#loginBtn {
   width: 40%;
   height: 30px;
   background-color: var(--firstColor);
@@ -104,7 +105,7 @@
   height: 40px;
   background-color: var(--fithColor);
   color: white;
-  margin-top: -10em;
+  margin-top: -2em;
   opacity: 0.7;
   border-radius: 4px;
 }
@@ -115,6 +116,11 @@
 
 #error:hover {
   opacity: 1;
+}
+
+.inputFields input:focus {
+  border-color: var(--firstColor);
+  outline: 5px solid transparent;
 }
 
 /*
