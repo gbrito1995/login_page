@@ -31,6 +31,11 @@
   flex: 4;
 }
 
+.container :first-child {
+  display: flex;
+  justify-content: center;
+}
+
 .loginDiv {
   max-width: 550px;
   width: 60%;
@@ -91,16 +96,25 @@
   color: white;
 }
 
-#error{
+#error {
   display: flex;
-  justify-content: center;
-  width: 200px;
-  height: 60px;
+  justify-content: space-around;
+  align-items: center;
+  width: 270px;
+  height: 40px;
   background-color: var(--fithColor);
   color: white;
-  position: fixed;
-  top: 1em;
+  margin-top: -10em;
   opacity: 0.7;
+  border-radius: 4px;
+}
+
+#error i {
+  cursor: pointer;
+}
+
+#error:hover {
+  opacity: 1;
 }
 
 /*

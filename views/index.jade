@@ -5,9 +5,9 @@ block content
     section       
       if error
         div(id="error")= error
-          i(class="fa fa-close")
+          i(class="fa fa-close", id="errorBtn")
     section
-      form(class="loginDiv" action="/home", method="POST")
+      form(class="loginDiv" action="/", method="POST")
         div(class="avatar")
           i(class="fa fa-user")
         div(class="inputFields")
