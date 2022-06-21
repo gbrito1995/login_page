@@ -29,6 +29,8 @@
 
 .container> :nth-child(2) {
   flex: 4;
+  display: flex;
+  flex-direction: column;
 }
 
 .container :first-child {
@@ -84,6 +86,7 @@
   color: white;
   border-radius: 4px;
   opacity: 0.7;
+  transition: color 0.5s;
 }
 
 .avatar {
@@ -121,6 +124,25 @@
 .inputFields input:focus {
   border-color: var(--firstColor);
   outline: 5px solid transparent;
+}
+
+#forgetLogin {
+  align-self: center;
+  margin-top: 1em;
+  width: 180px;
+  height: 30px;
+  background-color: var(--seventhColor);
+  border: none;
+  color: black;
+  border-radius: 4px;
+  border: 2px solid var(--thirdColor);
+  transition: color 0.5s;
+}
+
+#forgetLogin:hover {
+  background-color: black;
+  color: var(--seventhColor);
+
 }
 
 /*

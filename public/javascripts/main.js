@@ -46,20 +46,20 @@ let errorAnimation = () => {
       errorDiv.style.marginTop = '-10em';
       errorDiv.style.trasition = '2s';
     }, 4000)
-    /*
-        errorBtn.addEventListener('click', () => {
-          errorDiv.style.marginTop = '-10em';
-          errorDiv.style.trasition = '2s';
-        })*/
+
+    errorBtn.addEventListener('click', () => {
+      errorDiv.style.marginTop = '-10em';
+      errorDiv.style.trasition = '2s';
+    })
   }
 
 }
-
+/*
 errorBtn.addEventListener('click', () => {
   errorDiv.style.marginTop = '-10em';
   errorDiv.style.trasition = '2s';
 })
-
+*/
 errorAnimation();
 
 
