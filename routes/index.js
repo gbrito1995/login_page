@@ -4,9 +4,11 @@ const md5 = require('md5-nodejs');
 const fnLogin = require('../repositories/in-memory/databaseOperations.js')
 /* GET index page. */
 router.get('/', function (req, res, next) {
+
+  console.log(res)
   res.render('index');
 });
-
+/*
 router.post('/', function (req, res, next) {
 
   const { login, password } = req.body;
@@ -19,5 +21,5 @@ router.post('/', function (req, res, next) {
   }
 
 });
-
+*/
 module.exports = router;
